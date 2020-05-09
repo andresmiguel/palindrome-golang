@@ -4,9 +4,6 @@ import (
 	"unicode"
 )
 
-func main() {
-}
-
 func IsPalindrome(s string) bool {
 	var letters []rune
 
@@ -16,13 +13,12 @@ func IsPalindrome(s string) bool {
 		}
 	}
 
-	for i := range letters {
-		if letters[i] != letters[len(letters) - i - 1] {
+	size := len(letters) / 2
+	for i := 0; i < size; i++ {
+		if letters[i] != letters[len(letters)-i-1] {
 			return false
 		}
 	}
 
 	return true
 }
-
-
