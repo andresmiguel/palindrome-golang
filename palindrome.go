@@ -5,7 +5,7 @@ import (
 )
 
 func IsPalindrome(s string) bool {
-	var letters []rune
+	letters := make([]rune, 0)
 
 	for _, r := range s {
 		if unicode.IsLetter(r) {
