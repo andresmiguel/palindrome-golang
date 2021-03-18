@@ -1,2 +1,2 @@
 # palindrome-golang
-Palindrome implementation in Golang
+Palindrome implementation in the Golang language.
